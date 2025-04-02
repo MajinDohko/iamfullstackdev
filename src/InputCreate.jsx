@@ -14,11 +14,11 @@ const InputCreate = () => {
 
         try{
             const response = await fetch('http://localhost:3000/create', {
-                method: 'POST', // Método HTTP
+                method: 'POST',
                 headers: {
-                  'Content-Type': 'application/json', // Indicamos que el contenido es JSON
+                  'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(payload), // Convertimos el payload de JS a JSON
+                body: JSON.stringify(payload),
               })
               if(response.ok){
                 setTask('')
